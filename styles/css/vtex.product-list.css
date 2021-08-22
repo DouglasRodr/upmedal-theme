@@ -1,0 +1,61 @@
+.productName {
+    font-size: 0.875rem;
+}
+
+.productPriceContainer,
+.deleteIcon,
+.quantitySelectorDecrease,
+.quantitySelectorIncrease {
+    color: #59FF00;   
+}
+
+.deleteIcon,
+.quantitySelectorDecrease,
+.quantitySelectorIncrease {
+   opacity: .8;
+}
+
+.deleteIcon:hover,
+.quantitySelectorDecrease:hover,
+.quantitySelectorIncrease:hover,
+.deleteIcon:active,
+.quantitySelectorDecrease:active,
+.quantitySelectorIncrease:active,
+.deleteIcon:focus,
+.quantitySelectorDecrease:focus,
+.quantitySelectorIncrease:focus {
+    opacity: 1;
+}
+
+.productName,
+.inputContainer :first-child {
+    color: #F0F0F0;
+}
+
+.unitPriceContainer,
+.productPriceContainer {
+    margin: 0 8px;
+}
+
+.quantitySelectorButton,
+.inputContainer {
+    border-style: none;
+}
+
+.inputContainer {
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 4rem;
+}
+
+.inputContainer :first-child:focus {
+    background-color: #F0F0F0;
+    color: #212121;
+}
+
+.quantitySelectorButton,
+.quantitySelectorButton:hover,
+.quantitySelectorButton:focus,
+.quantitySelectorButton:active {
+    background-color: #303030;
+}

@@ -1,0 +1,253 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-desktop"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]  
+  },
+  "flex-layout.row#footer-desktop": {
+    "props": {
+      "blockClass": "footer",
+      "fullWidth": false,
+      "marginTop": 8
+    },
+    "children": [
+      "flex-layout.col#footer-desktop"
+    ] 
+  },
+  "flex-layout.row#footer-mobile": {
+    "props": {
+      "blockClass": "footer",
+      "fullWidth": false,
+      "marginTop": 8,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    },
+    "children": [
+      "flex-layout.col#footer-mobile"
+    ] 
+  },
+  "flex-layout.col#footer-desktop": {
+    "children": [
+      "flex-layout.row#footer-content-desktop",
+      "rich-text#developed-by",
+      "rich-text#upmedal"
+    ]
+  },
+  "flex-layout.col#footer-mobile": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "flex-layout.col#logo-footer",
+      "flex-layout.col#formas-pagamento",
+      "flex-layout.col#selos",
+      "flex-layout.col#patrocinadores",
+      "rich-text#developed-by",
+      "rich-text#upmedal"
+    ]
+  },
+  "flex-layout.row#footer-content-desktop": {
+    "children": [
+      "flex-layout.col#logo-footer",
+      "flex-layout.col#footer-details"
+    ]
+  },
+  "flex-layout.col#logo-footer": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "width": "20%"
+    },
+    "children": [
+      "logo#footer",
+      "social-networks"
+    ]
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": "https://www.facebook.com/vtexonline/"
+        },
+        {
+          "name": "Instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
+        },
+        {
+          "name": "Twitter",
+          "url": "https://twitter.com/vtexonline"
+        },
+        {
+          "name": "Youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
+        }
+      ]
+    }
+  },
+  "logo#footer": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/upmedal_logo.png",
+      "width": "150"
+    }
+  },
+  "flex-layout.col#footer-details": {
+    "props": {
+      "width": "80%"
+    },
+    "children": [
+      "flex-layout.row#footer1-desktop",
+      "flex-layout.row#footer2-desktop"
+    ]  
+  },
+  "flex-layout.row#footer1-desktop": {
+    "props": {
+      "blockClass": "footer",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    },
+    "children": [
+      "flex-layout.col#spacer",
+      "flex-layout.col#formas-pagamento",
+      "flex-layout.col#selos"
+    ]
+  },
+  "flex-layout.row#footer2-desktop": {
+    "props": {
+      "blockClass": "footer",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false,
+      "paddingTop": 5,
+      "paddingBottom": 5
+    },
+    "children": [
+      "flex-layout.col#spacer",
+      "flex-layout.col#patrocinadores"
+    ]
+  },
+  "flex-layout.col#formas-pagamento": {
+    "props": {
+      "marginRight": 5
+    },
+    "children": [
+      "rich-text#formas-pagamento",
+      "image#formas-pagamento"
+    ]
+  },
+  "rich-text#formas-pagamento": {
+    "props": {
+        "text": "Formas de Pagamento",
+        "textPosition": "CENTER",
+        "font": "t-heading-6-1",
+        "blockClass": "text-footer"
+    }
+  },
+  "image#formas-pagamento": {
+    "props": {
+      "src": "assets/formas_pagamento.png",
+      "maxWidth": 250
+    }
+  },
+  "flex-layout.col#selos": {
+    "props": {
+      "width": "15%"
+    },
+    "children": [
+      "rich-text#selos",
+      "image#selos"
+    ]
+  },
+  "rich-text#selos": {
+    "props": {
+        "text": "Selos",
+        "textPosition": "CENTER",
+        "font": "t-heading-6-1",
+        "blockClass": "text-footer"
+    }
+  },
+  "image#selos": {
+    "props": {
+      "src": "assets/selos.png",
+      "maxWidth": 200
+    }
+  },
+  "flex-layout.col#patrocinadores": {
+    "children": [
+      "rich-text#patrocinadores",
+      "image#gama",
+      "image#vtex"
+    ]
+  },
+  "image#gama": {
+    "props": {
+      "src": "assets/gama_academy.png",
+      "maxWidth": 200
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "src": "assets/vtex.png",
+      "maxWidth": 200
+    }
+  },
+  "flex-layout.col#details-footer": {
+    "children": [
+      "flex-layout.row#formas-pagamento-selos",
+      "flex-layout.col#patrocinadores"
+    ]
+  },
+  "flex-layout.row#formas-pagamento-selos": {
+    "children": [
+      "flex-layout.col#formas-pagamento",
+      "flex-layout.col#selos" 
+    ]
+  },
+  "rich-text#patrocinadores": {
+    "props": {
+        "text": "Patrocinadores",
+        "textPosition": "CENTER",
+        "font": "t-heading-6-1",
+        "blockClass": "text-footer"
+    }
+  },
+  "flex-layout.row#patrocinadores": {
+    "children": [
+      "image#gama",
+      "image#vtex"
+    ]
+  },
+  "rich-text#developed-by": {
+    "props": {
+      "text": "Desenvolvido por: Wânderson Douglas Rodrigues | Desafio Fase 2 Hiring Coders Gama Academy VTEX",
+      "textPosition": "CENTER",
+      "font": "t-heading-6-1",
+      "blockClass": "text-footer"
+    }
+  },
+  "rich-text#upmedal": {
+    "props": {
+      "text": "UpMedal CNPJ: 25.384.723/0001-62 São Paulo - SP 2021",
+      "textPosition": "CENTER",
+      "font": "t-heading-6-1",
+      "blockClass": "text-footer"
+    }
+  }
+}

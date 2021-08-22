@@ -1,0 +1,60 @@
+.container--grid {
+    background-color: #424242;
+}
+
+.element--grid :global(.vtex-button) {
+    width: 94%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #59FF00;
+	border-color: #59FF00;
+	background-color: #212121;
+	font-weight: 500;
+    border-width: 1px;
+}
+
+.element--grid :global(.vtex-button):hover,
+.element--grid :global(.vtex-button):focus,
+.element--grid :global(.vtex-button):active {
+	color: #212121;
+	border-color: #212121;
+	background-color: #59FF00;
+	font-weight: 550;
+}
+
+.nameContainer--grid{
+    text-align: center;
+    justify-content: center;
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 75px;
+
+}
+
+.productNameContainer--grid {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.productBrand--grid {
+    color: #F0F0F0;
+}
+
+.listPrice--grid,
+.listPriceLabel--grid,
+.sellingPrice--grid {
+    padding: 0;
+}
+
+.sellingPrice--grid {
+    font-size: 1.5rem;
+}
+
+.priceContainer--grid {
+    align-items: start;
+    margin-left: 12px;
+}
+
+.image--grid {
+    border-radius: 0;
+}

@@ -1,0 +1,206 @@
+{
+    "tab-list#home": {
+        "children": [
+            "slider-layout#tab-menu"
+        ]
+    },
+    "slider-layout#tab-menu": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 8,
+                "tablet": 4,
+                "phone": 2
+            },
+            "centerMode": "to-the-left",
+            "showPaginationDots": "never",
+            "arrowSize": 14,
+            "navigationStep": 3,
+            "infinite": false,
+            "fullWidth": false,
+            "blockClass": "tab-menu"            
+        },
+        "children": [
+            "tab-list.item#home1",
+            "tab-list.item#home2",
+            "tab-list.item#home3",
+            "tab-list.item#home4",
+            "tab-list.item#home5",
+            "tab-list.item#home6",
+            "tab-list.item#home7",
+            "tab-list.item#home8",
+            "tab-list.item#home9",
+            "tab-list.item#home10",
+            "tab-list.item#home11"
+        ] 
+    },
+    "tab-list.item#home1": {
+        "props": {
+            "tabId": "home1",
+            "label": "Promoção",
+            "defaultActiveTab": true
+        }
+    },
+    "tab-list.item#home2": {
+        "props": {
+            "tabId": "home2",
+            "label": "Desafios"
+        }
+    },
+    "tab-list.item#home3": {
+        "props": {
+            "tabId": "home3",
+            "label": "Corinthians"
+        }
+    },
+    "tab-list.item#home4": {
+        "props": {
+            "tabId": "home4",
+            "label": "Palmeiras"
+        }
+    },
+    "tab-list.item#home5": {
+        "props": {
+            "tabId": "home5",
+            "label": "Guerreiros"
+        }
+    },
+    "tab-list.item#home6": {
+        "props": {
+            "tabId": "home6",
+            "label": "Signos"
+        }
+    },
+    "tab-list.item#home7": {
+        "props": {
+            "tabId": "home7",
+            "label": "Medalhas"
+        }
+    },
+    "tab-list.item#home8": {
+        "props": {
+            "tabId": "home8",
+            "label": "Camisetas"
+        }
+    },
+    "tab-list.item#home9": {
+        "props": {
+            "tabId": "home9",
+            "label": "Bonés"
+        }
+    },
+    "tab-list.item#home10": {
+        "props": {
+            "tabId": "home10",
+            "label": "Óculos"
+        }
+    },
+    "tab-list.item#home11": {
+        "props": {
+            "tabId": "home11",
+            "label": "Combos"
+        }
+    },
+    "tab-content#home": {
+       "children": [
+            "tab-content.item#home1",
+            "tab-content.item#home2",
+            "tab-content.item#home3",
+            "tab-content.item#home4",
+            "tab-content.item#home5",
+            "tab-content.item#home6",
+            "tab-content.item#home7",
+            "tab-content.item#home8",
+            "tab-content.item#home9",
+            "tab-content.item#home10",
+            "tab-content.item#home11"
+       ]
+    },
+    "tab-content.item#home1": {
+       "children": [
+        "search-result-layout.customQuery#promocao" 
+        ],
+        "props": {
+            "tabId": "home1"
+        }
+    },
+    "tab-content.item#home2": {
+        "children": [
+            "search-result-layout.customQuery#desafios"
+        ],
+        "props": {
+            "tabId": "home2"
+        }
+    },
+    "tab-content.item#home3": {
+        "children": [
+            "search-result-layout.customQuery#corinthians"
+        ],
+        "props": {
+            "tabId": "home3"
+        }
+    },
+    "tab-content.item#home4": {
+        "children": [
+            "search-result-layout.customQuery#palmeiras"
+        ],
+        "props": {
+            "tabId": "home4"
+        }
+    },
+    "tab-content.item#home5": {
+        "children": [
+            "search-result-layout.customQuery#guerreiros"
+        ],
+        "props": {
+            "tabId": "home5"
+        }
+    },
+    "tab-content.item#home6": {
+        "children": [
+            "search-result-layout.customQuery#signos"
+        ],
+        "props": {
+            "tabId": "home6"
+        }
+    },
+    "tab-content.item#home7": {
+        "children": [
+            "search-result-layout.customQuery#medalhas"
+        ],
+        "props": {
+            "tabId": "home7"
+        }
+    },
+    "tab-content.item#home8": {
+        "children": [
+            "search-result-layout.customQuery#camisetas"
+        ],
+        "props": {
+            "tabId": "home8"
+        }
+    },
+    "tab-content.item#home9": {
+        "children": [
+            "search-result-layout.customQuery#bones"
+        ],
+        "props": {
+            "tabId": "home9"
+        }
+    },
+    "tab-content.item#home10": {
+        "children": [
+            "search-result-layout.customQuery#oculos"
+        ],
+        "props": {
+            "tabId": "home10"
+        }
+    },
+    "tab-content.item#home11": {
+        "children": [
+            "search-result-layout.customQuery#combos"
+        ],
+        "props": {
+            "tabId": "home11"
+        }
+    }
+}

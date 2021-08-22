@@ -1,0 +1,40 @@
+{   
+    "product-summary.shelf#grid": {
+        "children": [
+            "product-summary-name#grid",
+            "product-summary-image#grid",            
+            "product-summary-space",
+            "product-summary-price#grid",
+            "add-to-cart-button#grid"
+        ],
+        "props": {
+            "clearLink": "none",
+            "blockClass": "grid"
+        }
+    },
+    "product-summary-name#grid": {
+        "props": {
+            "blockClass": "grid",
+            "tag": "div"
+        }
+    },
+    "product-summary-image#grid": {
+        "props": {
+            "blockClass": "grid"
+        } 
+    },
+    "product-summary-price#grid": {
+        "props": {
+            "blockClass": "grid",
+            "labelListPrice": "",
+            "labelSellingPrice": "",
+            "showLabels": true
+        }
+    },
+    "add-to-cart-button#grid": {
+        "props": {
+            "onClickBehavior": "go-to-product-page",
+            "text": "Ver Detalhes"
+        }
+    }
+}

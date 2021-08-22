@@ -1,0 +1,28 @@
+.caretIcon {
+    color: #F0F0F0;
+}
+
+.sliderLayoutContainer--banner {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-top: 24px;
+    padding-bottom: 38px;    
+}
+
+.paginationDot--banner--isActive {
+    background-color: #59FF00;
+}
+
+.sliderArrows--banner {
+    position: absolute;
+    bottom: 0;
+}
+
+.sliderLeftArrow--tab-menu:disabled,
+.sliderRightArrow--tab-menu:disabled {
+    display: none;    
+}
+
+.sliderRightArrow--tab-menu {
+    position: static;   
+}

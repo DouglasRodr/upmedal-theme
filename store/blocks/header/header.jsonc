@@ -1,0 +1,188 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },  
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  //Layout Desktop
+  "header-layout.desktop": {
+    "children": [
+      "flex-layout.row#header-desktop",
+      "whatsapp-button"
+    ]
+  },
+  //Layout Mobile (Tablet + Phone)
+  "header-layout.mobile": {
+    "children": [
+      "responsive-layout.tablet#header-tablet",
+      "responsive-layout.phone#header-phone",
+      "whatsapp-button"
+    ]
+  },
+  //Layout Tablet
+  "responsive-layout.tablet#header-tablet": {
+    "children": [
+      "flex-layout.row#header-tablet"      
+    ]
+  },
+  //Layout Phone
+  "responsive-layout.phone#header-phone": {
+    "children": [  
+      "flex-layout.row#header-phone",
+      "flex-layout.row#search-phone"
+    ]
+  },
+  //Header Desktop
+  "flex-layout.row#header-desktop": {
+    "props": {
+      "blockClass": "header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar#desktop",
+      "flex-layout.col#spacer",
+      "login#desktop",
+      "minicart.v2"
+    ]
+  },
+  //Header Tablet
+  "flex-layout.row#header-tablet": {
+    "props": {
+      "blockClass": "header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#logo-tablet",
+      "flex-layout.col#spacer",
+      "search-bar#tablet",
+      "flex-layout.col#spacer",
+      "login#mobile",
+      "minicart.v2"
+    ]
+  },
+  //Header Phone
+  "flex-layout.row#header-phone": {
+    "props": {
+      "blockClass": "header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "login#mobile",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.row#search-phone": {
+    "props": {
+      "blockClass": "header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": false
+    },
+    "children": [
+      "search-bar#phone"
+    ]
+  },
+  //Logo Desktop
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/upmedal_logo.png",
+      "width": "150"
+    }
+  },
+  //Logo Tablet
+  "flex-layout.col#logo-tablet": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo#tablet"
+    ]
+  },
+  "logo#tablet": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/upmedal_logo.png",
+      "width": "110"
+    }
+  },
+  //Search Bar Desktop
+  "search-bar#desktop": {
+    "props": {
+      "autoFocus": true,
+      "placeholder": "O que você está procurando?",
+      "maxWidth": "534px"           
+    }
+  },
+  //Search Bar Tablet
+  "search-bar#tablet": {
+    "props": {
+      "autoFocus": true,
+      "placeholder": "O que você está procurando?",
+      "maxWidth": "280px"           
+    }
+  },
+  //Search Bar Phone
+  "search-bar#phone": {
+    "props": {
+      "autoFocus": true,
+      "placeholder": "O que você está procurando?",
+      "maxWidth": "700px"           
+    }
+  },
+  //Login Desktop
+  "login#desktop": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Minha Conta",
+      "blockClass": "login-desktop"
+    }
+  },
+  //Login Mobile (Tablet + Phone)
+  "login#mobile": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Minha Conta",
+      "blockClass": "login-mobile"
+    }
+  },
+  //Spacer
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "whatsapp-button": {
+    "props": {
+      "src": "assets/whatsapp_icon.png",
+      "url": "https://api.whatsapp.com/send?phone=87988041999"
+    }
+  }
+}

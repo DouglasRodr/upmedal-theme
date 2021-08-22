@@ -1,0 +1,36 @@
+{
+    "slider-layout#banner": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "arrowSize": 18,
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "blockClass": "banner"
+        },
+        "children": [
+            "image#banner1", 
+            "image#banner2"
+        ] 
+    },
+    "image#banner1": {
+        "props": {
+            "blockClass": "banner",
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf",
+            "maxHeight": 330
+        }
+    },
+    "image#banner2": {
+        "props": {
+            "blockClass": "banner",
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/du3k6akoks0u3xe322aypnaaal8e",
+            "maxHeight": 330
+        }
+    }
+}

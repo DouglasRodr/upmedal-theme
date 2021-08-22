@@ -1,0 +1,42 @@
+.searchBarContainer {
+    width: 700px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px #727273;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group),
+.searchBarContainer :global(.vtex-input__suffix) {
+    border-radius: 0;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+    background-color: #212121;
+    border-style: none;
+}
+
+.searchIcon,
+.closeIcon,
+.searchBarContainer :global(.vtex__icon-spinner) {
+    opacity: .8;
+    color: #59FF00;
+}
+
+.searchIcon:hover,
+.closeIcon:hover {
+    opacity: 1;
+}
+
+.imageElement--banner {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.swiperBullet--active,
+.productBrand {
+    color: #59FF00;
+}

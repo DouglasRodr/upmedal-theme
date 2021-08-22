@@ -1,0 +1,61 @@
+@media screen and (min-width: 1024px) {
+
+    .container {
+        width: 100px;
+    }
+
+    .container :global(.vtex-button)::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        transform: translate(10%, -100%);
+        transition: .5s ease ;
+        background-color: #59FF00;
+    }
+
+    .container :global(.vtex-button):hover::after,
+    .container :global(.vtex-button):active::after, 
+    .container :global(.vtex-button):focus::after {
+        width: 80%;
+    }
+
+}
+
+.container :global(.vtex-button) {
+    display: inline-block;
+    transition: .5s ease;
+    position: relative;
+    opacity: .8;
+}
+
+.flexRowContent--buy-button :global(.vtex-button) {
+    opacity: .8;
+    color: #212121;    
+    background-color: #59FF00;
+}
+
+.flexRowContent--buy-button :global(.vtex-button):hover {
+    opacity: 1;
+}
+
+.container :global(.vtex-button):hover,
+.container :global(.vtex-button):active, 
+.container :global(.vtex-button):focus {
+    opacity: 1;
+    background-color: #212121;    
+    color:#59FF00;
+}
+
+.label {
+    text-transform: none;
+    padding: 0;
+}
+
+.profileIcon, 
+.label  {
+    color: #59FF00;
+}
